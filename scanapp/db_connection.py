@@ -86,7 +86,7 @@ def get_infos_from_db(location):
 
 
 def upload_to_s3(location):
-    conn = boto.connect_s3(aws_access_key_id=AWS_ACCESS_KEY, aws_secret_access_key=AWS_SECRET_KEY)
+    conn = boto.connect_s3()
     if os.path.exists(location):
         bucket = conn.get_bucket(BUCKET_NAME)
         key = Key(bucket)
