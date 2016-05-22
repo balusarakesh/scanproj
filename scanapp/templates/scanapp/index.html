@@ -1,0 +1,10 @@
+<html>
+<body>
+<form action="{% url 'scanapp:upload' %}" method='post' enctype="multipart/form-data">
+{% csrf_token %}
+email: <input type="email" name="emailid" value=""><br>
+select file: <input type="file" name="uploadedfile" accept=".zip" ><br>
+<input type="submit" value="upload" />
+</form>
+</body>
+</html>
