@@ -1,0 +1,10 @@
+*.pyc
+/lib
+/bin
+/include
+/local
+.pydevproject
+*~
+scanproj/db.sqlite3
+.project
+/scancode-toolkit
