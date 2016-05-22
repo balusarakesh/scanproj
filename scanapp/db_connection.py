@@ -8,8 +8,6 @@ import boto
 
 
 
-
-
 def get_connector(user=NAME,passwd=PASSWORD,host=HOST,db=NAME):
     """
     Returns a connector for a given database by using the parameters 'user', 'passwd', 'host' and 'db',
